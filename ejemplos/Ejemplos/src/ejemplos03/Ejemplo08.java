@@ -21,14 +21,14 @@ public class Ejemplo08 {
         String mensajeSuma;
         String mensajeSumaDos;
         
-        System.out.printf("Ingrese el limite de la tabla:", args); 
+        System.out.println("Ingrese el limite de la tabla"); 
         limite = entrada.nextInt();
         
-        System.out.printf("Ingrese la tabla que desea realizar:", args);
+        System.out.println("Ingrese la tabla que desea realizar");
         tabla = entrada.nextInt();
         
-        System.out.printf("Ingrese la operacion que desea realizar (1)suma,"
-                + "(2)multiplicación:", args);
+        System.out.println("Ingrese la operacion que desea realizar (1)suma,"
+                + "(2)multiplicación");
         opcion = entrada.nextInt();
         
         switch(opcion){
