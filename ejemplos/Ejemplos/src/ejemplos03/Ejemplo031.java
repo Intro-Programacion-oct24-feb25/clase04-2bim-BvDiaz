@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemplos01;
+//Generar una soluicion q permita sumar 2 numeros, los numeros deben ser ingresados en el metodo main, el metodo que
+//genera la suma debe verificar que los numeros sean positivos para realizar la operacion caso contrario debe devolver 
+//0 
+package ejemplos03;
 
 import java.util.Scanner;
 
@@ -11,7 +14,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo03 {
+public class Ejemplo031 {
 
     public static void main(String[] args) {
 
@@ -34,10 +37,14 @@ public class Ejemplo03 {
 
     public static int obtenerSuma(int a, int b) {
         int suma;
-        suma = a + b;
+
+        if (a > 0 && b > 0) {
+            suma = a + b;
+        }else{
+            suma = 0;
+        }
         return suma;
         // return a + b;
     }
-    
-    
+
 }
