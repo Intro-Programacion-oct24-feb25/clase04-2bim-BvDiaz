@@ -20,7 +20,8 @@ public class Ejemplo08 {
         int limite;
         int tabla;
         int signo;
-        String mensajeSuma;
+        String mensajeSuma1;
+        String mensajeSuma2;
 
         System.out.println("Ingrese limite de la tabla");
         limite = entrada.nextInt();
@@ -32,11 +33,17 @@ public class Ejemplo08 {
 
         switch (signo) {
             case 1:
-                mensajeSuma = obtenerTablaSumar(limite, tabla);
+                
+                mensajeSuma1 = obtenerTablaSumar(limite, tabla);
+                System.out.println(mensajeSuma1);
+                
+            break;
+            
             case 2:
-                mensajeSuma = obtenerTablaMultiplicar(limite, tabla);
-
-                System.out.printf("%s\n", mensajeSuma);
+                mensajeSuma2 = obtenerTablaMultiplicar(limite, tabla);
+                System.out.println(mensajeSuma2);
+                
+            break;
         }
 
     }
@@ -45,11 +52,12 @@ public class Ejemplo08 {
         int operacion;
         String cadena = "";
         for (int i = 1; i <= limite; i++) {
-            operacion = tabla + i;
-            cadena = String.format("%s%d + %d = %d\n", cadena, tabla, i,
+            operacion = tabla * i;
+            cadena = String.format("%s%d * %d = %d\n", cadena, tabla, i,
                     operacion);
         }
         return cadena;
+
     }
 
     public static String obtenerTablaMultiplicar(int limite, int tabla) {
